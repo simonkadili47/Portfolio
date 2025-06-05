@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './Components/Navbar';
-import Home from './Pages/Home';
-import About from './Pages/About';
-import Resume from './Pages/Resume';
+import Home from './Pages/home/Home';
+import About from './Pages/about/About';
+import Resume from './Pages/resume/Resume';
 import './App.css';
 
 function App() {
@@ -12,7 +12,6 @@ function App() {
       <div className='font-sans'>
         <Navbar />
         <Routes>
-          {/* Redirect root path (/) to /home */}
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About/>} />
