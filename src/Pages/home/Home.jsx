@@ -3,6 +3,11 @@ import { Typed } from "react-typed";
 import About from "../about/About";
 import Resume from "../resume/Resume";
 import Services from "../services/Service";
+import RecentProjects from "../project/Project";
+import Testimonials from "../testimonials/Testimonials";
+import Freelancing from "../testimonials/Freelancing";
+import Contact from "../contact/Contact";
+
 
 const Home = () => {
   const typedRef = useRef(null);
@@ -54,6 +59,30 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-8 py-8">
           <Services />
         </div>
+      </div>
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto px-8 py-8">
+          <RecentProjects />
+        </div>
+      </div>
+       <div className="bg-white">
+        <div className="max-w-7xl mx-auto px-8 py-8">
+          <Testimonials />
+        </div>
+        
+      </div>
+
+       <div className="bg-white">
+        <div className="max-w-7xl mx-auto px-8 py-8">
+          <Freelancing/>
+        </div>
+        
+      </div>
+       <div className="bg-white">
+        <div className="max-w-7xl mx-auto px-8 py-8">
+          <Contact/>
+        </div>
+        
       </div>
     </div>
   );
