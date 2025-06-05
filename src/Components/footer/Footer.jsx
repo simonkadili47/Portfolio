@@ -6,9 +6,8 @@ const Footer = () => {
     <footer className="w-full bg-gray-900 py-12 text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-
           <div>
-            <h3 className="text-xl font-bold mb-4">Simon Kadili</h3>
+            <h3 className="text-xl font-bold mb-4">Abraham Maleko</h3>
             <p className="text-gray-400 mb-4">
               Full Stack Developer creating modern web solutions with cutting-edge technologies.
             </p>
@@ -42,7 +41,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Info</h3>
             <ul className="space-y-2 text-gray-400">
@@ -56,7 +54,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <Mail className="w-5 h-5 mr-2 mt-0.5" />
-                simonkadli47@gmail.com
+                simonkadili47@gmail.com
               </li>
             </ul>
           </div>
@@ -82,7 +80,6 @@ const Footer = () => {
             </form>
           </div>
         </div>
-
 
         <div className="border-t border-gray-800 pt-6 text-center text-gray-400">
           <p>© {new Date().getFullYear()} Simon Kadili. All rights reserved.</p>
