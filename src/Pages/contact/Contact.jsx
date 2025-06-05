@@ -2,9 +2,9 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen flex items-start justify-center px-4 ">
+    <div className="min-h-screen flex items-start justify-center px-4 mb-0"> {/* Added mb-0 to remove bottom margin */}
       <div className="w-full max-w-7xl mt-0">
-        <div className="text-center mb-12">
+        <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Contact Me</h1>
           <p className="text-xl text-gray-600">If Not Now, When? Let's Work Together</p>
         </div>
@@ -18,7 +18,7 @@ const Contact = () => {
                 </svg>
               ),
               title: 'Email Address',
-              value: 'abrahammaleko@gmail.com',
+              value: 'simonkadili47@gmail.com',
             },
             {
               icon: (
@@ -37,7 +37,7 @@ const Contact = () => {
                 </svg>
               ),
               title: 'Phone Number',
-              value: '+255 713 000 000',
+              value: '+255 714 52 96 20',
             },
             {
               icon: (

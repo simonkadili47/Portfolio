@@ -8,7 +8,6 @@ import Testimonials from "../testimonials/Testimonials";
 import Freelancing from "../testimonials/Freelancing";
 import Contact from "../contact/Contact";
 
-
 const Home = () => {
   const typedRef = useRef(null);
 
@@ -65,25 +64,24 @@ const Home = () => {
           <RecentProjects />
         </div>
       </div>
-       <div className="bg-white">
+      <div className="bg-white">
         <div className="max-w-7xl mx-auto px-8 py-8">
           <Testimonials />
         </div>
-        
       </div>
 
-       <div className="bg-white">
+      <div className="bg-white">
         <div className="max-w-7xl mx-auto px-8 py-8">
-          <Freelancing/>
+          <Freelancing />
         </div>
-        
       </div>
-       <div className="bg-white">
-        <div className="max-w-7xl mx-auto px-8 py-8">
-          <Contact/>
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto px-8 pt-8 pb-0">
+          <Contact />
         </div>
-        
       </div>
+
+      
     </div>
   );
 };

@@ -8,24 +8,28 @@ import Services from './Pages/services/Service';
 import RecentProjects from './Pages/project/Project';
 import Testimonials from './Pages/testimonials/Testimonials';
 import Contact from './Pages/contact/Contact';
-import './App.css';
+import Footer from './Components/footer/Footer';
 
 
 function App() {
   return (
     <Router>
-      <div className='font-sans'>
+      <div className="flex flex-col min-h-screen font-sans">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Navigate to="/home" />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/resume" element={<Resume/>} />
-          <Route path="/services" element={<Services/>} />
-          <Route path="/projects" element={<RecentProjects/>} />
-          <Route path="/projects" element={<Testimonials/>} />
-           <Route path="/projects" element={<Contact/>} />
-        </Routes>
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Navigate to="/home" />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/projects" element={<RecentProjects />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/contact" element={<Contact />} />
+           
+          </Routes> 
+        </main>
+        <Footer />
       </div>
     </Router>
   );
