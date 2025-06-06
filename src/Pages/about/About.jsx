@@ -3,63 +3,60 @@ import image from "../../assets/kadili.jpeg"
 
 const About = () => {
     return (
-      <div>
-        <div className="flex flex-col md:flex-row p-4 md:p-8 items-center">
-          <div className="md:w-1/3">
+      <div id="about" className="px-4 md:px-8 py-8 md:py-16">
+        <div className="flex flex-col md:flex-row items-center max-w-7xl mx-auto">
+          {/* Image Section - Full width on mobile, 1/3 on desktop */}
+          <div className="w-full md:w-1/3 mb-8 md:mb-0">
             <img
               src={image}
               alt="Kadili"
-              className="w-full h-auto rounded-lg shadow-md"
+              className="w-full max-w-md mx-auto h-auto rounded-lg shadow-md"
             />
           </div>
   
-          {/* Text Section with reduced spacing */}
-          <div className="md:w-2/3 font-sans mt-8 md:ml-8 text-justify">
-            <h1 className="text-4xl font-bold text-gray-800">About Me</h1>
-            <p className="text-lg mt-1 font-sans leading-relaxed text-gray-700">
+          {/* Content Section - Full width on mobile, 2/3 on desktop */}
+          <div className="w-full md:w-2/3 md:ml-8">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 text-center md:text-left">About Me</h1>
+            <p className="text-base md:text-lg mt-4 font-sans leading-relaxed text-gray-700">
               Simon Kadili is a Full Stack Developer with 5 years of experience.
               He uses his passion and skills to create and build web products. He
               can work independently, with web agencies, companies, startups, and
               individuals to create digital blueprints.
             </p>
-            <div className="space-y-2 mt-6">
-              <p>
-                <span className="font-bold text-xl">Name:</span>
-                <span className="ml-20 text-xl text-gray-400">Simon Kadili</span>
-              </p>
-              <p>
-                <span className="font-bold text-xl">Date of birth:</span>
-                <span className="ml-6 text-xl text-gray-400"> Feb 18, *****</span>
-              </p>
-              <p>
-                <span className="font-bold text-xl">Address:</span>
-                <span className="ml-14 text-xl text-gray-400">
-                  Tanzania, Dar es Salaam
-                </span>
-              </p>
-              <p>
-                <span className="font-bold text-xl">Email:</span>
-                <span className="ml-20 text-xl text-gray-400">
-                  simonkadili47@gmail.com
-                </span>
-              </p>
-              <p>
-                <span className="font-bold text-xl">Phone:</span>
-                <span className="ml-16 text-xl text-gray-400">
-                  +255-714-529-620
-                </span>
-              </p>
-              <p>
-                <span className="font-bold text-xl">Language:</span>
-                <span className="ml-10 text-xl text-gray-400">
-                  English, Swahili
-                </span>
-              </p>
-              <p className="pt-4">
+            
+            {/* Personal Info - Stacked on mobile, inline on desktop */}
+            <div className="mt-6 space-y-3 md:space-y-2">
+              <div className="flex flex-col md:flex-row">
+                <span className="font-bold text-lg md:text-xl min-w-[120px]">Name:</span>
+                <span className="text-lg md:text-xl text-gray-600 md:ml-4">Simon Kadili</span>
+              </div>
+              <div className="flex flex-col md:flex-row">
+                <span className="font-bold text-lg md:text-xl min-w-[120px]">Date of birth:</span>
+                <span className="text-lg md:text-xl text-gray-600 md:ml-4">Feb 18, *****</span>
+              </div>
+              <div className="flex flex-col md:flex-row">
+                <span className="font-bold text-lg md:text-xl min-w-[120px]">Address:</span>
+                <span className="text-lg md:text-xl text-gray-600 md:ml-4">Tanzania, Dar es Salaam</span>
+              </div>
+              <div className="flex flex-col md:flex-row">
+                <span className="font-bold text-lg md:text-xl min-w-[120px]">Email:</span>
+                <span className="text-lg md:text-xl text-gray-600 md:ml-4">simonkadili47@gmail.com</span>
+              </div>
+              <div className="flex flex-col md:flex-row">
+                <span className="font-bold text-lg md:text-xl min-w-[120px]">Phone:</span>
+                <span className="text-lg md:text-xl text-gray-600 md:ml-4">+255-714-529-620</span>
+              </div>
+              <div className="flex flex-col md:flex-row">
+                <span className="font-bold text-lg md:text-xl min-w-[120px]">Language:</span>
+                <span className="text-lg md:text-xl text-gray-600 md:ml-4">English, Swahili</span>
+              </div>
+              
+              <div className="pt-4 text-center md:text-left">
                 <span className="text-blue-600">5</span> Project Completed
-              </p>
-              <div className="mt-3">
-                <button className="rounded-full hover:text-black bg-blue-600 text-white px-6 py-2">
+              </div>
+              
+              <div className="mt-4 text-center md:text-left">
+                <button className="rounded-full hover:bg-blue-700 transition-colors bg-blue-600 text-white px-6 py-2 text-sm md:text-base">
                   Download CV
                 </button>
               </div>
