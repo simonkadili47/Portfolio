@@ -17,6 +17,9 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    base: '/', 
+    emptyOutDir: true, // Add this to ensure clean builds
+  },
+  preview: {
+    port: 3000,
   },
 });
