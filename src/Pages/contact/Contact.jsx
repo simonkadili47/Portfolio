@@ -29,7 +29,7 @@ const Contact = () => {
           <ContactCard
             icon={<Globe className="w-8 h-8 text-purple-600" />}
             title="Website"
-            value="www.abrahammalekoweb.com"
+            value="https://simonkadili-portfolio.vercel.app/"
           />
         </div>
       </div>
