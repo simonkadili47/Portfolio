@@ -5,7 +5,6 @@ const About = () => {
     return (
       <div id="about" className="px-4 md:px-8 py-8 md:py-16">
         <div className="flex flex-col md:flex-row items-center max-w-7xl mx-auto">
-          {/* Image Section - Full width on mobile, 1/3 on desktop */}
           <div className="w-full md:w-1/3 mb-8 md:mb-0">
             <img
               src={image}
@@ -14,17 +13,16 @@ const About = () => {
             />
           </div>
   
-          {/* Content Section - Full width on mobile, 2/3 on desktop */}
           <div className="w-full md:w-2/3 md:ml-8">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-800 text-center md:text-left">About Me</h1>
             <p className="text-base md:text-lg mt-4 font-sans leading-relaxed text-gray-700">
-              Simon Kadili is a Full Stack Developer with 5 years of experience.
+              Simon Kadili is a Full Stack Developer with 1 year of experience.
               He uses his passion and skills to create and build web products. He
               can work independently, with web agencies, companies, startups, and
               individuals to create digital blueprints.
             </p>
             
-            {/* Personal Info - Stacked on mobile, inline on desktop */}
+  
             <div className="mt-6 space-y-3 md:space-y-2">
               <div className="flex flex-col md:flex-row">
                 <span className="font-bold text-lg md:text-xl min-w-[120px]">Name:</span>
