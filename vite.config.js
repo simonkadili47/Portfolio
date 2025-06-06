@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
     force: true,
-    include: ['react', 'react-dom', 'react-type-animation', 'framer-motion'], 
+    include: ['react', 'react-dom', 'react-type-animation', 'framer-motion'],
   },
   server: {
     watch: {
@@ -14,5 +14,9 @@ export default defineConfig({
     hmr: {
       timeout: 60000,
     },
+  },
+  build: {
+    outDir: 'dist',
+    base: '/', 
   },
 });
