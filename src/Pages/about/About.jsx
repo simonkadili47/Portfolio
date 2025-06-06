@@ -17,7 +17,7 @@ const About = () => {
             <h1 className="text-3xl md:text-4xl font-bold text-gray-800 text-center md:text-left">About Me</h1>
             <p className="text-base md:text-lg mt-4 font-sans leading-relaxed text-gray-700">
               Simon Kadili is a Full Stack Developer with 1 year of experience.
-              He uses his passion and skills to create and build web products. He
+              He uses his passion and skills to create and build web products. I
               can work independently, with web agencies, companies, startups, and
               individuals to create digital blueprints.
             </p>
