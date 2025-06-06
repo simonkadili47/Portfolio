@@ -177,7 +177,7 @@ const Resume = () => {
               period: "2017-2020",
               degree: "Diploma",
               institution: "Ardhi Institute Morogoro",
-              description: "Took science subjects"
+              description: "Took Geomatics"
             },
             {
               period: "2013-2016",
