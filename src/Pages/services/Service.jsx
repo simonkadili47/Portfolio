@@ -21,10 +21,10 @@ const Services = () => {
 
   return (
     <div className="bg-white p-6">
-      <h2 className="text-4xl font-bold text-black text-center mb-8">What Services you will Get from me!</h2>
-      <div className="flex justify-center space-x-6">
+      <h2 className="text-3xl md:text-4xl font-bold text-black text-center mb-8">What Services you will Get from me!</h2>
+      <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch md:space-x-6 space-y-6 md:space-y-0">
         {services.map((service, index) => (
-          <div key={index} className="bg-white hover:bg-blue-300 text-black p-8 rounded-lg shadow-lg w-1/3 text-center min-h-[300px]">
+          <div key={index} className="bg-white hover:bg-blue-300 text-black p-6 md:p-8 rounded-lg shadow-lg w-full md:w-1/3 text-center min-h-[300px]">
             <div className="text-4xl mb-4 text-blue-600">{service.icon}</div>
             <h3 className="text-xl font-semibold mb-2 text-blue-600 uppercase">{service.title}</h3>
             <hr className="border-blue-600 w-1/3 mx-auto mb-4" />

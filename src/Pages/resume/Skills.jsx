@@ -18,9 +18,9 @@ const Skills = () => {
   return (
     <div className="flex flex-col w-full">
       <h2 className="text-blue-700 text-left font-bold text-3xl mb-8">Skills</h2>
-      <div className="flex justify-between mb-12">
+      <div className="flex flex-col md:flex-row justify-between mb-12">
         {categorySkills.map((skill, index) => (
-          <div key={index} className="bg-white p-4 rounded-lg shadow-md text-center w-1/3 mx-2">
+          <div key={index} className="bg-white p-4 rounded-lg shadow-md text-center w-full md:w-1/3 mx-0 md:mx-2 mb-4 md:mb-0">
             <h3 className="text-black font-bold text-lg mb-2">{skill.name}</h3>
             <div className="relative w-32 h-32 mx-auto">
               <svg className="w-full h-full" viewBox="0 0 100 100">
@@ -57,7 +57,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {detailedSkills.map((skill, index) => (
           <div key={index} className="flex items-center space-x-4">
             <div className="w-3/4"> 
