@@ -28,7 +28,7 @@ const Home = () => {
     }
   };
 
-  // Check for URL hash on mount and scroll to the corresponding section
+
   React.useEffect(() => {
     const hash = window.location.hash;
     const sectionRefs = {
