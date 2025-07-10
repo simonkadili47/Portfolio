@@ -3,12 +3,12 @@ import image from "../../assets/kadili.jpeg";
 import cvFile from "../../Pages/about/SIMON KADILI Cv IT.pdf"
 
 const About = () => {
-  // Function to handle CV download
+  
   const handleDownloadCV = () => {
-    // Create a temporary anchor element
+
     const link = document.createElement('a');
     link.href = cvFile;
-    link.download = 'Simon_Kadili_CV.pdf'; // The name you want the downloaded file to have
+    link.download = 'Simon Kadili CV.pdf'; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
